@@ -1,18 +1,18 @@
-import React, { useContext } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { formSchemaRegister } from "../schemas/formSchemaRegister";
-import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../contexts/UserContext.jsx";
-import { Api } from "../../services/api.js";
-import styles from "./style.module.css";
+import React, { useContext } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { formSchemaRegister } from "../schemas/formSchemaRegister"
+import { useNavigate } from "react-router-dom"
+import { UserContext } from "../../contexts/UserContext.jsx"
+import { Api } from "../../services/api.js"
+import styles from "./style.module.css"
 
 export const FormRegister = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: zodResolver(formSchemaRegister),
-  });
-  const navigate = useNavigate();
-  const { loginUser } = useContext(UserContext);
+  })
+  const navigate = useNavigate()
+  const { loginUser } = useContext(UserContext)
 
   const submit = async (formData) => {
     try {
@@ -23,7 +23,7 @@ export const FormRegister = () => {
         bio: formData.bio,
         contact: formData.contact,
         course_module: formData.courseModule
-      });
+      })
       loginUser(response.data);
       navigate("/");
       alert("Cadastro efetuado com sucesso");
@@ -31,7 +31,7 @@ export const FormRegister = () => {
       console.error("Error registering user", error);
       alert("Erro ao cadastrar, tente novamente.");
     }
-  };
+  }
 
   return (
     <form onSubmit={handleSubmit(submit)} className={styles.container}>
@@ -80,5 +80,5 @@ export const FormRegister = () => {
       </div>
       <button type="submit">Cadastrar</button>
     </form>
-  );
-};
+  )
+}
