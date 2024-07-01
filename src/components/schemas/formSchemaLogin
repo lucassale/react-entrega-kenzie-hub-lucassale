@@ -11,7 +11,6 @@ export const formSchemaLogin = z.object({
         .nonempty("Senha é obrigatório!")
         .min(8, "É necessário pelo menos 8 caracteres!")
         .regex(/(?=.*?[A-Z])/, "É necessário pelo menos ! letra Maiúscula!")
-        .regex(/(?=.*?[a-z])0/, "É necessário pelos menos 1 letra minúscula!")
         .regex(/(?=.*?[0-9])/, "É necessário pelos menos 1 número!"),
 
 })

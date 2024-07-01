@@ -1,0 +1,28 @@
+button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+    padding: 0 1.375rem;
+    border-radius: 0.25rem;
+
+    height: 3rem;
+
+    font-family: var(--font-primary);
+    font-size: var(--font-primary);
+    font-weight: 700;
+    
+    background-color: var(--color-primary);
+    color: white;
+
+    transition: .4s;
+
+    width: 100%;
+
+    &:hover{
+        background-color: var(color-primary-negative);
+    }
+    
+}

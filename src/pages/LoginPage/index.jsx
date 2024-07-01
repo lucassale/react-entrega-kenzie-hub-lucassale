@@ -1,12 +1,16 @@
 import { FormLogin } from "../../components/FormLogin"
 import { Header } from "../../components/Header"
+import  styles  from "./style.module.css"
 
 export const LoginPage = () => {
     return (
-        <main>
+        <div className={styles.loginPage}>
             <Header/>
-            <h1>Login</h1>
-            <FormLogin/>
-        </main>
+            <main>            
+                <h1 className="title">Login</h1>
+                <FormLogin/>
+            </main>
+        </div>
+        
     )
 }

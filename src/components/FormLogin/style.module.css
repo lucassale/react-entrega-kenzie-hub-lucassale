@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin: 0 auto;
+
+    height: 31.375rem;
+    width: 23.0625rem;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.registerLogin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.paragraphy{
+    font-size: 0.75rem;
+}

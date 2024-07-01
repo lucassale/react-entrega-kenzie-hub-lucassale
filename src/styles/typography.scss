@@ -1,0 +1,39 @@
+@import "./globalStyle.scss";
+
+.title{
+    font-family:var(--font-primary);
+    font-size: 1.1419rem;
+    font-weight: 700;
+    line-height: 1.7763rem;
+    color: var(--grey0);
+
+    &.title2{
+        font-family: var(--font-primary);
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.6494rem;
+    }
+
+    &.headline{
+        font-family: var(--font-primary);
+        font-size: 0.7612rem;
+        font-weight: 400;
+        line-height: 1.3956rem;
+    }
+
+    &.headlineBold{
+        font-family: var(--font-primary);
+        font-size: 0.7612rem;
+        font-weight: 600;
+        line-height: 1.1419rem;
+    }
+}
+
+.paragraphy{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1419rem;
+    color: var(--grey1);
+}
+

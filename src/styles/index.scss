@@ -1,0 +1,24 @@
+@import "./reset.scss";
+@import "./globalStyle.scss";
+@import "./typography.scss";
+@import "./button.scss";
+
+label{
+    color: var(--grey1);
+}
+
+input{
+    color: var(--grey1);
+    background-color: var(--grey2);
+    
+    height: 3rem;
+    width: 100%;
+
+    border: 1px solid var(--grey1);
+    border-radius: 4px;
+
+    margin: 0 auto;
+}
+
+
+

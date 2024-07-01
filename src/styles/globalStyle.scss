@@ -1,0 +1,49 @@
+
+
+:root{
+    --color-primary: #FF577F;
+    --color-primary-focus: #FF427F;
+    --color-primary-negative: #59323F;
+
+    --grey4: #121214;
+    --grey3:#212529;
+    --grey2: #343B41;
+    --grey1: #868E96;
+    --grey0: #F8F9FA;
+
+    --color-sucess: #3FE864;
+    --color-negative: #E83F5B;
+
+    --font-primary: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--grey4);
+    text-align: center;
+    
+    height: 100vh;
+    width: 100vw;
+
+    font-family: var(--font-primary);
+
+    margin: 0 auto;
+    text-align: center;
+
+    color: var(--grey1);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form{
+    background-color: var(--grey3);
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
